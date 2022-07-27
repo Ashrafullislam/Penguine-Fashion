@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css First </title>
+
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom css link  -->
+    <link rel="stylesheet" href="tailwind.css">
+    <!-- tailwin config.js cdn link  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              jacketprice:'#FABE4C',
+          
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+ <!-- header section start here  -->
+ <header class="bg-[#FFFBF0] pb-32 pt-6">
+  <section  class="">
+    
+    <nav >
+
+  
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn" >
+        <i class="fas fa-bars bars-icon"></i>
+         </label>
+
+       <a href="navbar.html">  <label for="logo" class="logo"><span> Pe</span></label></a>
+   
+          <ul>
+            <li><a href="" class="active"> Home </a> </li>
+            <li><a href="">Contact </a> </li>
+            <li><a href="">Service </a> </li>
+            <li><a href="">Project </a> </li>
+         </ul>
+      
+    </nav>
+
+
+
+    <div class="container mx-auto sm:flex justify-around items-center">
+
+
+      <div class="banner-text pl-5 sm:space-y-3  ">
+      <span class=" uppercase font-bold text-3xl sm:text-4xl text-amber-400">Be the Penguins </span> <br>
+      <span class="uppercase font-bold text-3xl sm:text-4xl text-gray-700">  of Winter</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet.</p>
+       <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+        </div>
+
+        <div class="model flex justify-center items-center pt-4 ">
+        <img src="images/model.png" class="w-1/2 sm:w-full" alt="model img"/>
+      </div>
+    </div>
+  </section>
+
+ </header>
+ <!-- hader section end here  -->
+
+ <!------------ main section start hrer  ------------->
+  <main class="my-15 space-y-20">
+    <!-- woman jacket start here  -->
+    <section class="container mx-auto space-y-8" > 
+      <h2 class="text-4xl font-bold uppercase mb-2 mt-4">Woman Jacket</h2>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-7">
+          <!-- jacket-1  -->
+           <div class="p-4 shadow-lg rounded-xl">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/jacket-1.png"   alt="jacket 1">
+                </div>
+
+                <h3 class="text-3xl font-semibold">Yellow coat Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$360</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+            </div>
+
+            <!-- jacket-2  -->
+            <div class="p-4 shadow-lg rounded-xl ">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/jacket-2.png" alt="jacket 2">
+
+                </div>
+                <h3 class="text-3xl font-semibold">Cream  coat Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$390</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+            </div>
+            <!-- jacket-3  -->
+
+            <div class="p-4 shadow-lg rounded-xl ">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/jacket-3.png" alt="jacket 3 img">
+
+                </div>
+                <h3 class="text-3xl font-semibold">Red Waterproof Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$360</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+               </div>    
+          </div>
+     </section>
+     <!-- woman jacket section end here  -->
+
+     <!-- Man jacket section start here  -->
+       <section class="container mx-auto">
+        <h2 class="text-4xl font-bold  mb-5 uppercase">Man Jacket</h2>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 ">
+          <!-- jacket-1  -->
+           <div class="p-4 shadow-lg rounded-xl">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/Man-jacket/jacket-4.png"   alt=" man jacket  4">
+                </div>
+
+                <h3 class="text-3xl font-semibold">Yellow Waterpoof Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$360</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+            </div>
+
+            <!-- jacket-2  -->
+            <div class="p-4 shadow-lg rounded-xl ">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/Man-jacket/jacket-5.png" alt=" man jacket 5">
+
+                </div>
+                <h3 class="text-3xl font-semibold">chocolate  Coat Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$460</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+            </div>
+            <!-- jacket-3  -->
+
+            <div class="p-4 shadow-lg rounded-xl ">
+                <div class=" p-5 bg-slate-200 rounded-xl">
+                <img src="images/Man-jacket/jacket-6.png" alt=" man jacket img">
+
+                </div>
+                <h3 class="text-3xl font-semibold">Black Hoddy Jacket</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex justify-between ">
+                  <h2 class="text-3xl font-bold text-jacketprice">$560</h2>
+                  <button type="button" class="px-8 py-4 bg-lime-600 text-white rounded-xl"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                </div>
+               </div>    
+          </div>
+        
+       </section>
+       <!-- man jacket section end here  -->
+  </main>
+
+  <!---------- Main section end here  ---------->
+
+  <!------ footer section start here  ------> 
+   <footer class="my-40">
+     <section class="container mx-auto  ">
+      <!-- parent-div  -->
+       <div class=" grid sm:grid-cols-1 gap-y-8 md:grid-cols-1 lg:grid-cols-2 gap-x-5 pb-7 px-10 ">
+          <!-- left-side start  -->
+
+        <div class="space-y-6  ml-3">      
+          <!-- perfect fit  -->
+          <div class="flex shadow-xl  lg:flx-row md:flex-row flex-col justify-around items-center">
+            <div>
+              <img src="images/house.png" class="w-20 h-20" alt="shooping icon">
+            </div>
+            <div class="space-y-4 py-4 ">
+              <h2 class="text-2xl font-semibold uppercase">Find the Perfect Fit</h2>
+              <p>Everybody is different, which is why we <br>
+                offer styles for every body.</p>
+            </div>
+          </div>
+
+      <!-- free exchange  -->
+          <div class="flex shadow-xl lg:flex-row md:flex-row flex-col justify-around items-center ">
+         <div>
+          <img src="images/box.png" class="w-20 h-20" alt="free exchange icon">
+         </div>
+
+         <div class="space-y-4 py-4">
+          <h2 class="text-2xl font-semibold uppercase">Free Exchanges</h2>
+          <p>One of the many reasons you can shop <br>
+            with peace of mind.</p>
+         </div>
+          </div>
+
+      <!-- contact our seller  -->
+        <div class="flex shadow-xl lg:flex-row md:flex-row flex-col justify-around items-center ">
+         <div>
+          <img src="images/question.png" class="w-20 h-20" alt="contact seller icon">
+         </div>
+        <div class="space-y-4 py-4">
+          <h2 class="text-2xl font-semibold uppercase">Contact Our Seller</h2>
+          <p>They are here to help you. That's quite <br>
+            literally what we pay them for.</p>
+         </div>
+          </div>
+
+        </div>
+     <!-- leftside end  -->
+
+     <!-- Right side start  -->
+        <div class="">
+          <img src="images/shopping.png" alt="Shooping Images">
+          </div>
+      </div>
+      
+      <!-- right side end  -->
+
+      <!-- parent-div end -->
+
+    </section>
+
+  </footer>
+
+</body>
+</html>
